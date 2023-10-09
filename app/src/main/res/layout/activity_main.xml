@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSpok"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Спок"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <Button
+        android:id="@+id/btnScissors"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Ножницы"
+        app:layout_constraintBottom_toTopOf="@+id/btnLizzard"
+        tools:layout_editor_absoluteX="269dp" />
+
+    <Button
+        android:id="@+id/btnStone2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Камень"
+        app:layout_constraintBottom_toTopOf="@+id/btnPaper"
+        tools:layout_editor_absoluteX="53dp" />
+
+    <Button
+        android:id="@+id/btnLizzard"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Ящерица"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/btnPaper"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Бумага"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="306dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Игра"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="678dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rpsls"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
